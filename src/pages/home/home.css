@@ -1,0 +1,117 @@
+/* Home Section styles */
+
+.home {
+    background: url(../../assets/home-image.jpg) no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.home::before {
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.home .container {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.home h1 {
+    font-size: 1.5em;
+}
+
+.home h2 {
+    font-size: 1.1em;
+}
+
+/* Home Section styles end */
+
+/* Sobre Section styles */
+
+.sobre {
+    background-color: #F8F9F9;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.home-buttons {
+    background-color: #6E8123;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.home-buttons:hover {
+    background-color: #888D1D;
+}
+
+/* Sobre Section styles end */
+
+/* Serviços Section styles */
+
+.servicos {
+    background-color: #F8F9F9;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.servico-image {
+    filter: drop-shadow(-8px 8px 10px rgba(0, 0, 0, 0.3));
+    border-radius: 50%;
+}
+
+/* Serviços Section styles end*/
+
+/* Contato Section styles */
+
+.contato {
+    position: relative;
+    background: url(../../assets/home-image.jpg) no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    scroll-margin-top: 80px;
+}
+
+.contato::before {
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.contato .container {
+    height: 100%;
+    z-index: 1;
+    position: relative;
+    padding-top: 50px;
+}
+
+.submit-button {
+    background-color: #6E8123 !important;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.submit-button:hover {
+    background-color: #888D1D !important;
+}
+
+/* Contato Section styles end */

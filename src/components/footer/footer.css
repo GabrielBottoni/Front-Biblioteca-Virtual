@@ -1,0 +1,45 @@
+
+/* Estilos do footer */
+.footer {
+  background-color: #fff;
+  color: #333;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  width: 100%;
+  font-weight: 500;
+}
+
+.footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 10px;
+}
+
+.footer .social-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer .icon {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.footer .icon:hover {
+  color: #6E8123;
+}
+
+.footer .label {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.footer .signature {
+  font-size: 0.9rem;
+  margin: 0;
+}

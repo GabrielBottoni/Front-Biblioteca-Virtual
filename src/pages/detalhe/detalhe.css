@@ -1,0 +1,63 @@
+.main {
+  padding-bottom: 12vh; 
+}
+
+.detalhe-card {
+  background-color: #fff;
+  border-radius: 16px;
+  border: none;
+  padding: 20px; /* Adiciona espaçamento dentro do card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+  margin-bottom: 20px; /* Espaço abaixo do card */
+  margin-top: 100px;
+  margin-bottom: auto;
+}
+
+.detalle-card-body {
+  max-height: 500px; /* Limita a altura do conteúdo do card */
+  overflow-y: auto;  /* Torna o conteúdo rolável se ultrapassar o limite */
+  padding: 20px;
+}
+
+.detalhe-imagem {
+  max-height: 320px;
+  object-fit: cover;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.descricao {
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.btn-alugar, .btn-voltar {
+  width: 100%; 
+  padding: 12px;
+  font-size: 14px; /* Aumenta o tamanho da fonte */
+  background-color: #6E8123 !important;
+  border: none;
+  border-radius: 50px !important;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 10px; /* Adiciona espaço entre os botões */
+}
+
+.btn-alugar:hover, .btn-voltar:hover {
+  background-color: #5a6a1e; /* Cor mais escura no hover */
+  transform: scale(1.05); /* Leve aumento no tamanho do botão */
+}
+
+.btn-voltar {
+  background-color: #6E8123 !important;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-voltar:hover {
+  background-color: #5a6a1e;
+}

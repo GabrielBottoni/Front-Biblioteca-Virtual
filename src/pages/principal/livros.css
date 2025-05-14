@@ -1,0 +1,181 @@
+body {
+    background-color: #F8F9F9 !important;
+    font-family: Arial, sans-serif;
+}
+
+/* Contêiner principal da página */
+.livros-container {
+    padding-top: 150px;
+    padding-bottom: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    background-color: #F8F9F9;
+}
+
+/* Título principal */
+.livros-container h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Barra de pesquisa e dropdown */
+.search-bar {
+    display: flex;
+    justify-content: space-between; /* separa pesquisa do dropdown */
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* para responsividade */
+    gap: 10px;
+}
+
+.search-input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Campo de pesquisa */
+.search-bar input {
+    width: 250px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+    border-color: #007bff;
+}
+
+/* Dropdown customizado */
+.dropdown-filtro .dropdown-toggle {
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 16px;
+    background-color: #6E8123 !important;
+    border: none;
+    min-width: 120px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-filtro .dropdown-toggle::after {
+    margin-left: 10px; /* Espaçamento entre texto e seta */
+}
+
+.dropdown-filtro .dropdown-menu {
+    border-radius: 8px;
+    padding: 10px;
+    min-width: 180px;
+}
+
+.btn-aplicar {
+    background-color: #28a745 !important;
+    border-radius: 50px !important;
+}
+
+.btn-limpar {
+    background-color: red !important;
+    border-radius: 50px !important;
+}
+
+/* Lista de livros responsiva */
+.livros-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Card do livro */
+.livro-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.livro-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagem */
+.livro-image {
+    width: 80px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+/* Informações */
+.livro-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    word-wrap: break-word;
+    flex: 1;
+}
+
+.livro-info h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.livro-info p {
+    font-size: 14px;
+    margin: 2px 0;
+    color: #555;
+}
+
+.livro-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn-details, .btn-buy {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn-details {
+    background-color: #007bff !important;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-details:hover {
+    background-color: #0056b3 !important;
+}
+
+.btn-buy {
+    background-color: #28a745 !important;
+    color: white;
+}
+
+.btn-buy:hover {
+    background-color: #218838 !important;
+}
